@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BritEdge Solutions Ltd.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Dark slate gray text */
+        }
+        .page-section {
+            display: none; /* Hide all pages by default */
+        }
+        .page-section.active {
+            display: block; /* Show active page */
+        }
+        .nav-link.active {
+            font-weight: 600; /* Semi-bold for active nav link */
+            color: #0d9488; /* Teal colour for active link */
+            border-bottom: 2px solid #0d9488; /* Underline active link */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl font-bold text-teal-700 mb-4 md:mb-0">
+                BritEdge Solutions Ltd.
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6">
+                    <li><a href="#home" class="nav-link text-gray-700 hover:text-teal-600 transition-colors duration-200 py-2" data-page="home">Home</a></li>
+                    <li><a href="#about" class="nav-link text-gray-700 hover:text-teal-600 transition-colors duration-200 py-2" data-page="about">About Us</a></li>
+                    <li><a href="#services" class="nav-link text-gray-700 hover:text-teal-600 transition-colors duration-200 py-2" data-page="services">Services</a></li>
+                    <li><a href="#manufacturing" class="nav-link text-gray-700 hover:text-teal-600 transition-colors duration-200 py-2" data-page="manufacturing">Manufacturing</a></li>
+                    <li><a href="#logistics" class="nav-link text-gray-700 hover:text-teal-600 transition-colors duration-200 py-2" data-page="logistics">Logistics</a></li>
+                    <li><a href="#case-studies" class="nav-link text-gray-700 hover:text-teal-600 transition-colors duration-200 py-2" data-page="case-studies">Case Studies</a></li>
+                    <li><a href="#careers" class="nav-link text-gray-700 hover:text-teal-600 transition-colors duration-200 py-2" data-page="careers">Careers</a></li>
+                    <li><a href="#contact" class="nav-link text-gray-700 hover:text-teal-600 transition-colors duration-200 py-2" data-page="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-6 md:px-12 py-8">
+
+        <!-- Home Section -->
+        <section id="home" class="page-section active bg-white p-8 rounded-lg shadow-md mb-8">
+            <h1 class="text-4xl font-extrabold text-teal-800 mb-6">Welcome to BritEdge Solutions Ltd.</h1>
+            <img src="https://placehold.co/1200x400/a7f3d0/0d9488?text=Modern+Manufacturing+Facility" alt="Modern Manufacturing Facility" class="w-full h-auto rounded-lg shadow-md mb-6 object-cover">
+            <p class="text-lg leading-relaxed mb-4">
+                BritEdge Solutions Ltd. is a leading UK-based B2B manufacturing and logistics company, committed to delivering excellence and innovation across various industries. With three primary operational sites, we specialise in providing robust and efficient solutions tailored to meet the unique demands of our clients.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+                Our comprehensive services span from precision manufacturing to seamless supply chain management, ensuring your business operations are optimised for success. We pride ourselves on our dedication to quality, reliability, and customer satisfaction.
+            </p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Innovative Manufacturing</h3>
+                    <p class="text-gray-600">Leveraging cutting-edge technology and skilled craftsmanship to produce high-quality components and products.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-green-700 mb-3">Efficient Logistics</h3>
+                    <p class="text-gray-600">Streamlining your supply chain with reliable transportation, warehousing, and distribution services.</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-3">Client-Centric Approach</h3>
+                    <p class="text-gray-600">Building strong partnerships by understanding and addressing the specific needs of each client.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-teal-800 mb-6">About BritEdge Solutions Ltd.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6 items-center">
+                <div>
+                    <p class="text-lg leading-relaxed mb-4">
+                        Founded with a vision to revolutionise B2B manufacturing and logistics, BritEdge Solutions Ltd. has grown into a trusted partner for businesses across the UK. Our journey began with a commitment to precision, efficiency, and unwavering quality, values that continue to drive us forward.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Founder: Sir Steven Rich</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        BritEdge Solutions Ltd. owes its inception to the visionary leadership of <span class="font-semibold text-teal-700">Sir Steven Rich</span>. In the early 1980s, Sir Steven, a seasoned industrialist with a profound understanding of the UK's manufacturing landscape, identified a critical need for integrated and highly efficient B2B solutions. He envisioned a company that would not only excel in precision engineering but also streamline the complex logistics involved in getting products to market.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        With a pioneering spirit and an unwavering commitment to British industry, Sir Steven established BritEdge from modest beginnings in Manchester. His dedication to fostering innovation, investing in cutting-edge technology, and building a highly skilled workforce laid the foundational pillars for the company's enduring success. His legacy continues to inspire our pursuit of excellence and our commitment to serving the backbone of British enterprise.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Mission</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        To empower businesses with superior manufacturing capabilities and seamless logistics solutions, fostering growth and operational excellence for our partners.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/d1fae5/065f46?text=Our+Dedicated+Team" alt="BritEdge Solutions Team" class="w-full h-auto rounded-lg shadow-md object-cover">
+                </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Vision</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                To be the UK's most reliable and innovative B2B manufacturing and logistics provider, recognised for our commitment to sustainability, technological advancement, and customer success.
+            </p>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Values</h3>
+            <ul class="list-disc list-inside text-lg leading-relaxed mb-4 pl-4">
+                <li><span class="font-medium text-teal-700">Integrity:</span> Operating with honesty and transparency in all our dealings.</li>
+                <li><span class="font-medium text-teal-700">Innovation:</span> Continuously seeking new and better ways to serve our clients and improve our processes.</li>
+                <li><span class="font-medium text-teal-700">Excellence:</span> Striving for the highest standards in every aspect of our work, from product quality to service delivery.</li>
+                <li><span class="font-medium text-teal-700">Collaboration:</span> Working closely with our clients and partners to achieve shared goals.</li>
+                <li><span class="font-medium text-teal-700">Sustainability:</span> Committed to environmentally responsible practices throughout our operations.</li>
+            </ul>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-teal-800 mb-6">Our Services</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                BritEdge Solutions Ltd. offers a comprehensive suite of services designed to meet the diverse needs of modern businesses. Our expertise spans across two core areas: advanced manufacturing and integrated logistics.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Manufacturing Solutions</h3>
+                    <img src="https://placehold.co/400x250/bfdbfe/1d4ed8?text=Precision+Engineering" alt="Precision Engineering" class="w-full h-auto rounded-lg shadow-sm mb-4 object-cover">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We provide state-of-the-art manufacturing services, from concept to completion. Our capabilities include precision engineering, custom fabrication, assembly, and quality assurance, ensuring your products are produced to the highest standards.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>CNC Machining & Fabrication</li>
+                        <li>Sheet Metal Work</li>
+                        <li>Welding & Assembly</li>
+                        <li>Prototyping & Product Development</li>
+                        <li>Quality Control & Testing</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Logistics & Supply Chain Management</h3>
+                    <img src="https://placehold.co/400x250/d1fae5/065f46?text=Efficient+Logistics" alt="Efficient Logistics" class="w-full h-auto rounded-lg shadow-sm mb-4 object-cover">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Our logistics services are designed to optimise your supply chain, reduce costs, and ensure timely delivery. We manage everything from warehousing and inventory to transportation and distribution, providing end-to-end solutions.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Warehousing & Storage</li>
+                        <li>Inventory Management</li>
+                        <li>Freight Forwarding (Road, Rail, Sea, Air)</li>
+                        <li>Last-Mile Delivery Solutions</li>
+                        <li>Customs & Compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manufacturing Section -->
+        <section id="manufacturing" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-teal-800 mb-6">Manufacturing Capabilities</h2>
+            <img src="https://placehold.co/1200x350/bfdbfe/1d4ed8?text=Advanced+Manufacturing+Processes" alt="Advanced Manufacturing Processes" class="w-full h-auto rounded-lg shadow-md mb-6 object-cover">
+            <p class="text-lg leading-relaxed mb-4">
+                At BritEdge Solutions Ltd., our manufacturing division is equipped with advanced machinery and a highly skilled workforce, enabling us to handle complex projects with precision and efficiency. We are committed to delivering products that meet the most stringent quality standards.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Precision Engineering</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Utilising state-of-the-art CNC machinery and CAD/CAM software, we achieve unparalleled precision in component manufacturing. From intricate parts to large-scale fabrications, our engineering capabilities are robust.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Multi-axis CNC Milling & Turning</li>
+                        <li>Grinding & Honing</li>
+                        <li>EDM (Electrical Discharge Machining)</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Fabrication & Assembly</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Our fabrication services include welding, bending, and forming a variety of materials. We also offer comprehensive assembly services, from sub-assemblies to complete product integration and testing.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>MIG, TIG, and Arc Welding</li>
+                        <li>Sheet Metal Bending & Rolling</li>
+                        <li>Automated & Manual Assembly Lines</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Quality Assurance</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Quality is at the core of our manufacturing process. We implement rigorous quality control measures at every stage, ensuring that all products meet the required specifications and performance criteria.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>CMM (Coordinate Measuring Machine) Inspection</li>
+                        <li>Non-Destructive Testing (NDT)</li>
+                        <li>Statistical Process Control (SPC)</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Materials & Industries</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We work with a wide range of materials including various metals (steel, aluminium, titanium), plastics, and composites. Our manufacturing serves diverse industries such as automotive, aerospace, energy, and general industrial.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Ferrous & Non-Ferrous Metals</li>
+                        <li>High-Performance Polymers</li>
+                        <li>Custom Alloy Fabrication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logistics Section -->
+        <section id="logistics" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-teal-800 mb-6">Logistics Solutions</h2>
+            <img src="https://placehold.co/1200x350/d1fae5/065f46?text=Global+Logistics+Network" alt="Global Logistics Network" class="w-full h-auto rounded-lg shadow-md mb-6 object-cover">
+            <p class="text-lg leading-relaxed mb-4">
+                BritEdge Solutions Ltd. provides end-to-end logistics and supply chain management services, ensuring your goods are moved efficiently, securely, and cost-effectively from origin to destination. Our integrated approach minimises complexities and maximises reliability.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Warehousing & Distribution</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Our strategically located warehouses offer secure storage, inventory management, and efficient pick-and-pack services. We provide flexible distribution solutions tailored to your specific market needs.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Climate-Controlled Storage</li>
+                        <li>Cross-Docking Services</li>
+                        <li>Order Fulfilment & Kitting</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Transportation Management</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We manage a diverse fleet and partner network to offer reliable transportation across road, rail, sea, and air. Our focus is on optimising routes, reducing transit times, and ensuring timely deliveries.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Full Truckload (FTL) & Less Than Truckload (LTL)</li>
+                        <li>Intermodal Transport</li>
+                        <li>Global Freight Forwarding</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Supply Chain Optimisation</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Beyond basic logistics, we offer consultancy and solutions for optimising your entire supply chain. This includes demand forecasting, inventory optimisation, and risk management to build resilient supply chains.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Supply Chain Analytics</li>
+                        <li>Logistics Consulting</li>
+                        <li>Reverse Logistics</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Technology & Tracking</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        Leveraging advanced logistics software, we provide real-time tracking, transparent reporting, and efficient communication. Our technology ensures you have full visibility and control over your shipments.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>GPS Tracking & Telematics</li>
+                        <li>Warehouse Management Systems (WMS)</li>
+                        <li>Transportation Management Systems (TMS)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-teal-800 mb-6">Our Success Stories</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                At BritEdge Solutions Ltd., we are proud of the tangible results we deliver for our clients. Here are a few examples of how our manufacturing and logistics expertise has helped businesses achieve their goals.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-yellow-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-yellow-700 mb-4">Case Study 1: Automotive Component Optimisation</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Challenge:</strong> A leading automotive manufacturer faced challenges with the timely delivery of critical engine components and high production costs.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Solution:</strong> BritEdge implemented a new precision manufacturing process for the components, reducing material waste by 15% and production time by 20%. Concurrently, our logistics team optimised the supply chain, implementing just-in-time delivery.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>Result:</strong> The client achieved a 10% reduction in overall production costs and a 99% on-time delivery rate, significantly improving their assembly line efficiency.
+                    </p>
+                </div>
+                <div class="bg-yellow-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-yellow-700 mb-4">Case Study 2: Retail Distribution Network Enhancement</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Challenge:</strong> A national retail chain struggled with inefficient warehousing and a fragmented distribution network, leading to stockouts and delayed store deliveries.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Solution:</strong> We redesigned their warehousing layout, implemented a new inventory management system, and consolidated their distribution routes. Our logistics platform provided real-time visibility across their entire network.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>Result:</strong> The retailer saw a 25% improvement in inventory accuracy, a 30% reduction in logistics costs, and a significant increase in customer satisfaction due to faster product availability.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Section -->
+        <section id="careers" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-teal-800 mb-6">Careers at BritEdge Solutions Ltd.</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Join BritEdge Solutions Ltd. and become part of a dynamic team dedicated to innovation and excellence in manufacturing and logistics. We offer a stimulating work environment, opportunities for professional growth, and a commitment to employee well-being.
+            </p>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Why Work With Us?</h3>
+            <ul class="list-disc list-inside text-lg leading-relaxed mb-4 pl-4">
+                <li><span class="font-medium text-teal-700">Growth Opportunities:</span> We invest in our employees' development through training programmes and career advancement paths.</li>
+                <li><span class="font-medium text-teal-700">Innovative Environment:</span> Work with cutting-edge technology and contribute to transformative projects.</li>
+                <li><span class="font-medium text-teal-700">Collaborative Culture:</span> Be part of a supportive team that values diverse perspectives and teamwork.</li>
+                <li><span class="font-medium text-teal-700">Competitive Benefits:</span> We offer attractive compensation packages and comprehensive benefits.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold text-gray-800 mb-3 mt-6">Current Openings</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Manufacturing Engineer</h4>
+                    <p class="text-gray-700 mb-2">Location: Manchester Site</p>
+                    <p class="text-gray-600">Seeking an experienced engineer to optimise production processes and ensure product quality.</p>
+                    <button class="mt-4 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-200">Apply Now</button>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Logistics Coordinator</h4>
+                    <p class="text-gray-700 mb-2">Location: Birmingham Site</p>
+                    <p class="text-gray-600">Responsible for coordinating shipments, managing inventory, and liaising with clients.</p>
+                    <button class="mt-4 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-200">Apply Now</button>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-semibold text-blue-700 mb-2">IT Systems Administrator (Cloud Focus)</h4>
+                    <p class="text-gray-700 mb-2">Location: Manchester Site</p>
+                    <p class="text-gray-600">An exciting opportunity to support our IT infrastructure, with a focus on cloud migration and management.</p>
+                    <button class="mt-4 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-200">Apply Now</button>
+                </div>
+            </div>
+            <p class="text-lg leading-relaxed mt-8">
+                Don't see a role that fits? Send us your CV at <a href="mailto:careers@britedge.co.uk" class="text-teal-600 hover:underline">careers@britedge.co.uk</a>.
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-teal-800 mb-6">Contact BritEdge Solutions Ltd.</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                We'd love to hear from you! Whether you have a query about our services, need a quote, or want to explore partnership opportunities, please get in touch using the form below or our contact details.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our UK Sites</h3>
+                    <div class="mb-4">
+                        <h4 class="text-xl font-semibold text-teal-700 mb-1">Manchester (Head Office)</h4>
+                        <p class="text-gray-700">123 Industrial Way,</p>
+                        <p class="text-gray-700">Manchester, M1 1AA</p>
+                        <p class="text-gray-700">United Kingdom</p>
+                        <p class="text-gray-700">Phone: +44 161 123 4567</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-xl font-semibold text-teal-700 mb-1">Birmingham Site</h4>
+                        <p class="text-gray-700">456 Logistics Park,</p>
+                        <p class="text-gray-700">Birmingham, B2 2BB</p>
+                        <p class="text-gray-700">United Kingdom</p>
+                        <p class="text-gray-700">Phone: +44 121 789 0123</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-teal-700 mb-1">Glasgow Site</h4>
+                        <p class="text-gray-700">789 Manufacturing Hub,</p>
+                        <p class="text-gray-700">Glasgow, G3 3CC</p>
+                        <p class="text-gray-700">United Kingdom</p>
+                        <p class="text-gray-700">Phone: +44 141 345 6789</p>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">General Enquiries</h4>
+                        <p class="text-gray-700">Email: <a href="mailto:info@britedge.co.uk" class="text-teal-600 hover:underline">info@britedge.co.uk</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-teal-500" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-teal-500" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject:</label>
+                            <input type="text" id="subject" name="subject" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-teal-500" placeholder="Subject of your message">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                            <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-teal-500" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline transition-colors duration-200">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-6 md:px-12 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 BritEdge Solutions Ltd. All rights reserved.</p>
+            <p class="mt-2 text-sm">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a> |
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+
+            // Function to show a specific page and update active nav link
+            function showPage(pageId) {
+                pageSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                const activePage = document.getElementById(pageId);
+                if (activePage) {
+                    activePage.classList.add('active');
+                    // Scroll to the top of the page content
+                    activePage.scrollIntoView({ behaviour: 'smooth', block: 'start' });
+                }
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                const activeNavLink = document.querySelector(`.nav-link[data-page="${pageId}"]`);
+                if (activeNavLink) {
+                    activeNavLink.classList.add('active');
+                }
+            }
+
+            // Event listeners for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent default anchor link behaviour
+                    const pageId = this.getAttribute('data-page');
+                    showPage(pageId);
+                });
+            });
+
+            // Handle initial page load based on URL hash or default to 'home'
+            const initialPage = window.location.hash ? window.location.hash.substring(1) : 'home';
+            showPage(initialPage);
+        });
+    </script>
+</body>
+</html>
